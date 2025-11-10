@@ -1,9 +1,10 @@
 # Site name
-site_name: SITE NAME
+site_name: DE5 Modile 5 - My Libary Pipeline
 
 # Navigation menu
 nav:
   - Overview: index.md
+  - Architecture: Architecture/index.md
 
 # Theme
 theme:
