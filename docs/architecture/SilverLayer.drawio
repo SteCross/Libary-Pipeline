@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.9">
+  <diagram name="Page-1" id="cTcYJySlEPg3TyhkE3wD">
+    <mxGraphModel dx="938" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NmU2oUSyCdXX40HCEMwd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=6;" parent="1" source="NmU2oUSyCdXX40HCEMwd-2" target="NmU2oUSyCdXX40HCEMwd-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NmU2oUSyCdXX40HCEMwd-2" value="&lt;b&gt;ETL&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Data Pipeline&lt;/span&gt;&lt;/b&gt;&lt;div&gt;Store Data in RAW table&lt;/div&gt;&lt;div&gt;Clean Data With Pyton&lt;/div&gt;&lt;div&gt;Pandas to clean&lt;/div&gt;&lt;div&gt;Great Expectations to test&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="245" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="NmU2oUSyCdXX40HCEMwd-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="NmU2oUSyCdXX40HCEMwd-5" target="NmU2oUSyCdXX40HCEMwd-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NmU2oUSyCdXX40HCEMwd-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=6;strokeWidth=6;" parent="1" source="NmU2oUSyCdXX40HCEMwd-5" target="NmU2oUSyCdXX40HCEMwd-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NmU2oUSyCdXX40HCEMwd-5" value="&lt;b&gt;&lt;u&gt;Data INPUT .CSV&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;ISBN&lt;/b&gt; (Unique)&lt;/div&gt;&lt;div&gt;Format (10 digit or 13 digit format)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Title&lt;/b&gt; (NOT NULL)&lt;/div&gt;&lt;div&gt;Format (text or number)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Author&lt;/b&gt; (NOT NULL)&lt;/div&gt;&lt;div&gt;Format (text)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Genre&lt;/b&gt; (NOT NULL)&lt;/div&gt;&lt;div&gt;Format (text) use lookup table?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Publication&lt;/b&gt; Year (NOT NULL)&lt;/div&gt;&lt;div&gt;Format (4 digit number NO DP)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Copies Available&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Format (number NO DP)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Acquisition Date&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Format (date YYYY-MM-DD)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/div&gt;&lt;div&gt;(available, checked out, damaged, missing, reserved)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="40" width="250" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="NmU2oUSyCdXX40HCEMwd-6" value="&lt;b&gt;&lt;u&gt;Normalize Data &amp;amp; STORAGE to SQL&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Data Table Fields&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ISBN&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Title&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Author&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Publication Year&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Copies Available&lt;/div&gt;&lt;div&gt;Acquisition Date&lt;/div&gt;&lt;div&gt;Input Date Stamp&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Genre&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Use lookup table [Genre_Types]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Copies Available&lt;/b&gt;&lt;/div&gt;&lt;div&gt;User a new fields [Available_*location*]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Use lookup table [Status_Types]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="40" width="250" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="NmU2oUSyCdXX40HCEMwd-8" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 36px;&quot;&gt;SILVER LAYER&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="300" y="30" width="250" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
