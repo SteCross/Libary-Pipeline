@@ -8,6 +8,11 @@ import json
 import logging
 from pathlib import Path
 
+def load_excel(filepath, sheet_name=0, **kwargs):
+    """Load Excel file into DataFrame."""
+    # TODO: Implement this
+    pass
+
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
