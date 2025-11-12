@@ -1,11 +1,11 @@
 def test_validate_isbn():
-    assert validate_isbn('978-0-123456-78-9') == True
-    assert validate_isbn('invalid') == False
-    assert validate_isbn('123') == False  # Too short
-    assert validate_isbn('') == False
+    assert validation('978-0-123456-78-9') == True
+    assert validation('invalid') == False
+    assert validation('123') == False  # Too short
+    assert validation('') == False
     #assert validate_isbn(None) == True  # ❌ BUG! Should be False
 
     #Has this worked?
 
     # Fix the test
-    assert validate_isbn(None) == False  # ✅ Fixed
+    assert validation(None) == False  # ✅ Fixed
