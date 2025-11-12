@@ -8,7 +8,7 @@
         bool: True if valid, False otherwise
     """
 #    if not isbn:
-        return False
+#        return False
 
     # Remove hyphens
 #    isbn = isbn.replace('-', '')
