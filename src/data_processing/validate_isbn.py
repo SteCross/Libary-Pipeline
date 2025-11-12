@@ -1,4 +1,4 @@
-def validate_isbn(isbn):
+#def validate_isbn(isbn):
     """Validate ISBN-13 format.
 
     Args:
@@ -7,19 +7,19 @@ def validate_isbn(isbn):
     Returns:
         bool: True if valid, False otherwise
     """
-    if not isbn:
+#    if not isbn:
         return False
 
     # Remove hyphens
-    isbn = isbn.replace('-', '')
+#    isbn = isbn.replace('-', '')
 
     # Check length
-    if len(isbn) != 13:
-        return False
+#    if len(isbn) != 13:
+#        return False
 
     # Check if all digits
-    if not isbn.isdigit():
-        return False
+#    if not isbn.isdigit():
+#        return False
 
-    return True
-    
+#    return True
+    pass
