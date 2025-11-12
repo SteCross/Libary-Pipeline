@@ -1,4 +1,5 @@
 # Library Data Pipeline
+![CI](https://github.com/SteCross/Libary-Pipeline/actions/workflows/ci.yml/badge.svg)
 
 ## Project Overview
 [TODO: Describe the library's data quality problem]
