@@ -1,7 +1,7 @@
 # Library Data Pipeline
 ![CI](https://github.com/SteCross/Libary-Pipeline/actions/workflows/ci.yml/badge.svg)
 
-![Teaching](https://img.shields.io/badge/module-DE5M6-blue)
+![Teaching](https://img.shields.io/badge/module-DE5M5-blue)
 ![Python Version](https://img.shields.io/badge/python-3.9--3.12-blue.svg)
 
 ![Open Issues](https://img.shields.io/github/issues/SteCross/Libary-Pipeline)
