@@ -65,6 +65,9 @@ pytest tests/ -v --cov=src --cov-report=term-missing
 
 Current coverage: [TODO: Add coverage badge]
 
+in power shell run the file below
+python -m src.data_processing.run_pipeline
+
 ## CI/CD
 This project uses GitHub Actions for continuous integration.
 
