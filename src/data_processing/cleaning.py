@@ -10,6 +10,7 @@ from typing import List, Optional
 
 logger = logging.getLogger(__name__)
 
+
 def remove_duplicates(df, subset=None):
     """Remove duplicate rows from DataFrame.
 
@@ -33,6 +34,7 @@ def remove_duplicates(df, subset=None):
         logger.info(f"Removed {removed} duplicate rows")
 
     return df
+
 
 def handle_missing_values(df, strategy='drop', fill_value=None, columns=None):
     """Handle missing values in DataFrame.
@@ -78,6 +80,7 @@ def handle_missing_values(df, strategy='drop', fill_value=None, columns=None):
 
     return df
 
+
 def standardize_dates(df, date_columns, date_format='%Y-%m-%d'):
     """Standardize date columns to consistent format.
 
@@ -107,4 +110,3 @@ def standardize_dates(df, date_columns, date_format='%Y-%m-%d'):
             raise
 
     return df# Data cleaning functions
-
